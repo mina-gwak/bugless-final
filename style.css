@@ -46,6 +46,69 @@ p {
   letter-spacing: -0.01em;
 }
 
+.fill-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  color: #fff;
+  background-color: #3040C4;
+  border-radius: 2px;
+  transition: opacity 200ms ease-in-out;
+}
+
+.fill-button.inverted {
+  color: #3040C4;
+  background-color: #fff;
+}
+
+.fill-button:hover {
+  opacity: 0.7;
+}
+
+/* Landing */
+
+.landing {
+  background-color: #FDDED8;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.landing-desc {
+  margin-bottom: 24px;
+}
+
+.landing .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+  margin-right: 8px;
+}
+
 /* 768px ↑ (Desktop) */
 
 @media screen and (min-width: 768px) {
@@ -55,6 +118,33 @@ p {
   p {
     font-size: 22px;
     line-height: 1.3636363636;
+  }
+
+  .fill-button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  /* Landing */
+
+  .landing-content {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.0285714286;
+    margin-bottom: 32px;
+  }
+
+  .landing-desc {
+    margin-bottom: 32px;
+  }
+
+  .landing .button-group .fill-button:first-child {
+    margin-right: 16px;
   }
 
 }
