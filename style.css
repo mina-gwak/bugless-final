@@ -113,21 +113,19 @@ p {
 
 .service {
   background-color: #F4F5F7;
+  padding: 80px 0;
 }
 
-.service-content {
-  padding: 80px 0;
+.service .col-12:first-child {
+  margin-bottom: 40px;
 }
 
 .service-title {
   font-size: 22px;
   line-height: 1.3636363636;
   letter-spacing: -0.04em;
+  color: #2B292D;
   margin-bottom: 16px;
-}
-
-.service .text-group:first-child {
-  margin-bottom: 40px;
 }
 
 /* Program */
@@ -384,20 +382,8 @@ p {
 
   /* Service */
 
-  .service-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .service .text-group:first-child {
-    width: 370px;
-    margin-right: 110px;
+  .service .col-12:first-child {
     margin-bottom: 0;
-  }
-
-  .service .text-group:last-child {
-    width: 450px;
   }
 
   .service-title {
