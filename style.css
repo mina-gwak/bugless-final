@@ -58,6 +58,7 @@ p {
   letter-spacing: -0.05em;
   color: #fff;
   background-color: #3040C4;
+  border: none;
   border-radius: 2px;
   transition: opacity 200ms ease-in-out;
 }
@@ -202,80 +203,61 @@ p {
 
 /* Curriculum */
 
-.curriculum-content {
-  padding: 80px 0;
-}
-
-.curriculum-header {
+.curriculum .row:first-child {
   margin-bottom: 48px;
 }
 
-.curriculum-title {
-  font-size: 34px;
-  line-height: 1.0588235294;
-  letter-spacing: -0.03em;
-  margin-bottom: 24px;
-}
-
-.curriculum-category{
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  color: #0189D1;
-  margin-bottom: 8px;
-}
-
-.curriculum-header p {
-  margin-bottom: 32px;
-}
-
-.curriculum-detail p {
-  font-size: 15px;
-  line-height: 1.4666666667;
-}
-
-.curriculum-detail p:first-child {
+.curriculum .row:last-child .col-12:first-child {
   margin-bottom: 40px;
 }
 
-.curriculum-detail strong {
-  font-weight: 700;
+.curriculum .section-category {
+  color: #0189D1;
 }
 
-.curriculum-content img {
+.curriculum .section-desc {
+  margin-bottom: 32px;
+}
+
+.curriculum-image {
   display: none;
+}
+
+.curriculum-detail-desc {
+  font-size: 15px;
+  line-height: 1.4666666667;
+  color: #2b292d;
 }
 
 /* Subscription */
 
 .subscription {
   background-color: #F2F8FA;
-}
-
-.subscription-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 40px 0;
 }
 
-.subscription-content img {
-  width: 190px;
-  height: 190px;
-  margin: 25px 0 40px;
+.subscription-image {
+  padding: 25px 0;
 }
 
-.subscription-detail {
-  text-align: center;
+.subscription-image img {
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto ;
 }
 
 .subscription-title {
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.05em;
+  color: #2B292D;
   margin-bottom: 16px;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
 }
 
 .subscription-detail {
@@ -289,34 +271,31 @@ p {
   margin-bottom: 24px;
 }
 
-.subscription-detail form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+.subscription .input-group {
+  margin-bottom: 8px;
 }
 
-.subscription-detail input {
-  width: 290px;
+.subscription .input-group input {
+  width: 100%;
   height: 48px;
   border: none;
-  padding-left: 16px;
+  border-radius: 2px;
+  padding: 0 16px;
   margin-bottom: 8px;
+  background-color: #fff;
 }
 
-.subscription-detail button {
-  width: 290px;
-  border: none;
-  margin-bottom: 8px;
+.subscription .input-group .fill-button {
+  width: 100%;
 }
 
-.subscription-misc {
+.subscription .form-notice {
   font-size: 13px;
   line-height: 1.5384615385;
   color: #7B7B7E;
 }
 
-.subscription-misc a {
+.subscription .form-notice a {
   color: #3040C4;
   text-decoration: underline;
 }
@@ -429,20 +408,16 @@ p {
 
   /* Curriculum */
 
-  .curriculum-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .curriculum .row:first-child {
+    margin-bottom: 24px;
   }
 
-  .curriculum-header-content {
-    width: 450px;
+  .curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 0;
   }
 
-  .curriculum-title {
-    font-size: 56px;
-    line-height: 1;
-    margin-bottom: 32px;
+  .curriculum .section-desc {
+    margin-bottom: 72px;
   }
 
   .curriculum-category {
@@ -451,46 +426,36 @@ p {
     margin-bottom: 16px;
   }
 
-  .curriculum-header p {
-    margin-bottom: 72px;
-  }
-
-  .curriculum-header img {
+  .curriculum-image {
     display: block;
-    width: 450px;
-    height: 450px;
   }
 
-  .curriculum-detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .curriculum-image img {
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    height: auto;
   }
 
-  .curriculum-detail p {
-    width: 450px;
+  .curriculum-detail-desc {
     font-size: 18px;
     line-height: 1.4444444444;
   }
 
-  .curriculum-detail p:first-child {
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-
   /* Subscription */
 
-  .subscription-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .subscription {
+    text-align: left;
+    padding: 80px 0;
   }
 
-  .subscription-content img {
-    width: 285px;
+  .subscription-image {
+    padding: 8px 0;
+  }
+
+  .subscription-image img {
     height: 285px;
-    margin-right: 113px;
+    margin-left: 0;
   }
 
   .subscription-detail {
@@ -509,31 +474,30 @@ p {
     letter-spacing: -0.05em;
   }
 
-  .subscription-detail p {
+  .subscription-desc {
     margin-bottom: 24px;
   }
 
-  .subscription-detail form {
+  .subscription .input-group {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
-  }
-
-  .subscription-detail input {
-    width: 362px;
-    height: 56px;
-    margin-right: 8px;
     margin-bottom: 4px;
   }
 
-  .subscription-detail button {
-    width: 160px;
-    height: 54px;
+  .subscription .input-group input {
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.3333333333;
+    margin-right: 8px;
+    margin-bottom: 0;
   }
 
-  .subscription-misc {
+  .subscription .input-group .fill-button {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  .subscription .form-notice {
     font-size: 14px;
     line-height: 1.7142857143;
   }
