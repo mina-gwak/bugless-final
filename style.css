@@ -130,6 +130,73 @@ p {
   margin-bottom: 40px;
 }
 
+/* Program */
+
+.program-content {
+  padding: 80px 0;
+}
+
+.program-header {
+  margin-bottom: 32px;
+}
+
+.program-title {
+  font-size: 34px;
+  line-height: 1.0588235294;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.program-category {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #009B4D;
+  margin-bottom: 8px;
+}
+
+.img-group {
+  text-align: center;
+}
+
+.program-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 291px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.program-img:hover {
+  background-color: #3141C5;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.program-img:last-child {
+  margin-bottom: 0;
+}
+
+.program-img img {
+  width: auto;
+  height: 195px;
+  margin-bottom: 16px;
+}
+
+.program-img figcaption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  letter-spacing: -0.02em;
+}
+
 /* 768px ↑ (Desktop) */
 
 @media screen and (min-width: 768px) {
@@ -189,6 +256,53 @@ p {
   .service-title {
     font-size: 26px;
     line-height: 1.3076923077;
+  }
+
+  /* Program */
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program-header {
+    width: 770px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .program-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .program-category {
+    font-size: 22px;
+    line-height: 1.0909090909;
+    margin-bottom: 16px;
+  }
+
+  .program-header p {
+    margin-bottom: 72px;
+  }
+
+  .img-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program-img {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .program-img:last-child {
+    margin-right: 0;
   }
 
 }
