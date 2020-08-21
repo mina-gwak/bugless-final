@@ -109,6 +109,27 @@ p {
   margin-right: 8px;
 }
 
+/* Service */
+
+.service {
+  background-color: #F4F5F7;
+}
+
+.service-content {
+  padding: 80px 0;
+}
+
+.service-title {
+  font-size: 22px;
+  line-height: 1.3636363636;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.service .text-group:first-child {
+  margin-bottom: 40px;
+}
+
 /* 768px ↑ (Desktop) */
 
 @media screen and (min-width: 768px) {
@@ -145,6 +166,29 @@ p {
 
   .landing .button-group .fill-button:first-child {
     margin-right: 16px;
+  }
+
+  /* Service */
+
+  .service-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service .text-group:first-child {
+    width: 370px;
+    margin-right: 110px;
+    margin-bottom: 0;
+  }
+
+  .service .text-group:last-child {
+    width: 450px;
+  }
+
+  .service-title {
+    font-size: 26px;
+    line-height: 1.3076923077;
   }
 
 }
